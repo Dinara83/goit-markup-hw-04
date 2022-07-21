@@ -128,13 +128,35 @@ body {
 }
 
 /* Шапка сайта */
-
+/* .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid none;
+} */
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: var(--primary-theme-dark);
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+    /* flex-wrap: wrap;
+    align-items: center; */
+    /* background-color: var(--primary-theme-dark); */
+
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/Фон_вверху_html/Img.jpg);
+
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    /* background-origin: padding-box;
+    background-clip: padding-box; */
 }
 
 .hero-title {
@@ -157,6 +179,7 @@ body {
     letter-spacing: 0.06em;
     align-items: center;
     text-align: center;
+    border-style: none;
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -386,10 +409,6 @@ body {
     background-color: var(--primary-theme-dark);
 }
 
-/* .addr {
-    flex-wrap: wrap;
-    align-items: center;
-} */
 .logo-foot {
     font-family: var(--secondary-font);
     font-weight: 700;
