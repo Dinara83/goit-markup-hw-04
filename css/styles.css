@@ -1,0 +1,424 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --basic-color: #212121;
+    --primary-color: #757575;
+    --font: black;
+    --primary-theme-dark: #2f303a;
+    --primary-theme-light: #eeeeee;
+    --accent-color: #2196f3;
+    --primary-white-color: #fff;
+    --primary-light-grey-color: #f5f4fa;
+    --line-header: #ececec;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    align-content: stretch;
+    background-color: var(--primary-white-color);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Навигация */
+
+.page-header {
+    /* padding-left: 200px;
+    padding-top: 24px;
+    padding-right: 200px; */
+    border: 1px solid var(--line-header);
+}
+
+.page-header-container,
+.page-nav,
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.contact-emeil-link,
+.portfolio-contact-emeil-link {
+    margin-right: 50px;
+}
+
+/* Логотип */
+
+.logo {
+    margin-right: 93px;
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-studio {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--basic-color);
+}
+
+.menu-link,
+.menu-portfolio-link {
+    padding: 32px 0;
+    display: block;
+    font-weight: 500;
+    color: var(--basic-color);
+}
+
+.menu-link:hover,
+.menu-portfolio-link:hover,
+.menu-link:focus,
+.menu-portfolio-link:focus {
+    color: var(--accent-color);
+}
+
+.contact-emeil-link,
+.contact-phone-nomber-link,
+.portfolio-contact-emeil-link,
+.portfolio-contact-phone-nomber-link {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.contact-emeil-link:hover,
+.contact-emeil-link:focus {
+    color: var(--accent-color);
+}
+
+.contact-phone-nomber-link:hover,
+.contact-phone-nomber-link:focus {
+    color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+/* Шапка сайта */
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary-theme-dark);
+}
+
+.hero-title {
+    margin-left: 237px;
+    margin-right: 237px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.button-hero {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    display: block;
+    padding: auto;
+    margin: auto;
+    text-decoration: none;
+}
+
+.button-hero:hover {
+    background-color: #188ce8;
+}
+
+/* Особенности */
+/* Деятельность */
+/* Команда */
+
+.visually-hidden,
+.button-hidden,
+.project-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.activity {
+    padding-top: 0px;
+}
+.proficional {
+    padding-top: 0px;
+    background-color: var(--primary-light-grey-color);
+    padding-top: 94px;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--basic-color);
+}
+
+.suptitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    align-items: center;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.activity-title,
+.proficional-title {
+    padding: 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--basic-color);
+    margin-bottom: 50px;
+}
+
+.visually-item,
+.activity-item,
+.proficional-item {
+    display: flex;
+}
+
+.visually-item > .visy:not(:last-child) {
+    margin-right: 30px;
+}
+
+.activity-item > .activ:not(:last-child) {
+    margin-right: 30px;
+}
+
+.proficional-item > .prof:not(:last-child) {
+    margin-right: 30px;
+}
+
+.activity-foto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.foto {
+    /* background: url(4853.jpg); */
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.prof {
+    width: 270px;
+    margin: 0 auto;
+    background: var(--primary-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.prof-title {
+    padding: 30px 30px;
+}
+
+.proficional-team {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--basic-color);
+    /* margin-top: 30px; */
+}
+
+.profle {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Портфолио */
+
+.portfolio {
+    background-color: var(--primary-white-color);
+}
+
+/* Фильтры */
+
+.filter-button {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-button > .filter-btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter-btn {
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.modal-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    align-items: center;
+    text-align: center;
+    border-style: none;
+    padding: auto;
+    margin: auto;
+    text-decoration: none;
+    background-color: var(--primary-light-grey-color);
+    border-radius: 4px;
+    color: var(--basic-color);
+    padding: 6px 32px;
+}
+
+.main-btm {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+/* Проект */
+
+.project-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.proj {
+    flex-basis: calc((100% - 60px) / 3);
+    background: var(--primary-white-color);
+    border: 1px solid var(--primary-theme-light);
+}
+
+.project-title {
+    padding: 24px 20px;
+}
+
+.name-proj {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--basic-color);
+}
+
+.contant {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--primary-color);
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+/* Футер */
+
+.under {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--primary-theme-dark);
+}
+
+/* .addr {
+    flex-wrap: wrap;
+    align-items: center;
+} */
+.logo-foot {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-studio-foot {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+.under-item {
+    margin-top: 20px;
+}
+
+.under-address {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+
+.under-contact {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
