@@ -36,11 +36,19 @@
                 </ul>
             </nav>
             <ul class="menu-contact">
-                <li>
-                    <a class="contact-emeil-link" href="meilto:info@devstudio.com">info@devstudio.com</a>
+                <li class="contact-emeil">
+                    <a class="contact-emeil-link" href="meilto:info@devstudio.com">info@devstudio.com>
+                        <svg class="envelope-icon" width="16px" heigth="12px">
+                            <use href="./images/icon/symbol-defs.svg#envelope"></use>
+                        </svg></a>
                 </li>
                 <!-- href="meilto:info@devstudio.com" -->
-                <li><a class="contact-phone-nomber-link">+38 096 111 11 11</a></li>
+                <li class="contact-phone">
+                    <a class="contact-phone-nomber-link">+38 096 111 11 11>
+                        <svg class="smartphone-icon" width="10px" heigth="16px">
+                            <use href="./images/icon/symbol-defs.svg#smartphone"></use>
+                        </svg></a>
+                </li>
                 <!-- href="tel:+380961111111" -->
             </ul>
         </div>
@@ -61,29 +69,29 @@
         <section class="visually section">
             <div class="container">
                 <h2 class="visually-hidden">преимущества</h2>
-                <ul class="visually-item">
-                    <li class="visy">
+                <ul class="visually-list">
+                    <li class="visually-item">
                         <h3 class="main-title">Внимание к деталям</h3>
                         <p class="suptitle">
                             Идейные соображения, а также начало повседневной работы по
                             формированию позиции.
                         </p>
                     </li>
-                    <li class="visy">
+                    <li class="visually-item">
                         <h3 class="main-title">Пунктуальность</h3>
                         <p class="suptitle">
                             Задача организации, в особенности же рамки и место обучения кадров
                             влечет за собой.
                         </p>
                     </li>
-                    <li class="visy">
+                    <li class="visually-item">
                         <h3 class="main-title">Планирование</h3>
                         <p class="suptitle">
                             Равным образом консультация с широким активом в значительной степени
                             обуславливает.
                         </p>
                     </li>
-                    <li class="visy">
+                    <li class="visually-item">
                         <h3 class="main-title">Современные технологии</h3>
                         <p class="suptitle">
                             Значимость этих проблем настолько очевидна, что реализация плановых
@@ -165,26 +173,50 @@
         </section>
     </main>
     <!-- Адрес -->
-    <footer>
-        <address class="under">
-            <div class="container">
+    <footer class="under">
+        <div class="container">
+
+            <address class="under-address">
                 <a class="logo-foot link" href="./index.html" lang="en">Web<span
                         class="logo-studio-foot link">Studio</span></a>
                 <ul class="under-item">
-                    <li class="under-address">
+                    <li class="address">
                         <a>г. Киев, пр-т Леси Украинки, 26</a>
                         <!-- href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/"
               target="_blank" rel="noopener nofollow" -->
                     </li>
-                    <li class="under-contact">
+                    <li class="contact">
                         <a class="under-emeil">info@example.com</a>
                     </li>
-                    <li class="under-contact">
+                    <li class="contact">
                         <a class="under-phone-nomber">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </div>
-        </address>
+            </address>
+
+            <section class="social">
+                <h2 class="social-title">Присоединяйтесь></h2>
+                <ul class="social-list list">
+                    <li class="social-list_item">
+                        <a href="#" class="social-list_item-link
+                            social-list_item-link_instagram></a>
+                    </li>
+                    <li class=" social-list_item">
+                            <a href="#" class="social-list_link-link
+                            social-list_item-link_twitter></a>
+                    </li>
+                    <li class=" social-list_item">
+                                <a href="#" class="social-list_link-link
+                            social-list_item-link_facebook></a>
+                    </li>
+                    <li class=" social-list_item">
+                                    <a href="#" class="social-list_link-link
+                            social-list_item-link_linkedin-1></a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
     </footer>
 </body>
 
