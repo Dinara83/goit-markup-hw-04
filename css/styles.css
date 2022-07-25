@@ -40,13 +40,22 @@ body {
     border: 1px solid var(--line-header);
 }
 
-.page-header-container,
-.page-nav,
-.menu,
-.menu-contact {
+.page-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 /* Логотип */
@@ -73,12 +82,7 @@ body {
     color: var(--basic-color);
 }
 
-.menu-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.menu-link,
-.menu-portfolio-link {
+.menu-link {
     padding: 32px 0;
     display: block;
     font-weight: 500;
@@ -86,9 +90,7 @@ body {
 }
 
 .menu-link:hover,
-.menu-portfolio-link:hover,
-.menu-link:focus,
-.menu-portfolio-link:focus {
+.menu-link:focus {
     color: var(--accent-color);
 }
 
@@ -96,70 +98,43 @@ body {
     color: var(--accent-color);
 }
 
-.contact-emeil,
-.portfolio-contact-emeil {
-    margin-top: 32px;
-    margin-right: 50px;
-
-
-.contact-emeil-link,
-.contact-phone-nomber-link,
-.portfolio-contact-emeil-link,
-.portfolio-contact-phone-nomber-link {
-    margin: 32px 0;
+.menu-link-contact {
+    padding: 32px 0;
+    display: block;
     font-weight: 500;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.contact-emeil-link::before .envelope-icon {
-    fill: var(--accent-color);
+.portfolio-menu-link-contact {
+    padding: 32px 0;
+    display: block;
+    font-weight: 500;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.envelope-icon {
-    padding-right: 10px;
-}
-
-.smartphone-icon {
+.port-contact-icon {
     margin-right: 10px;
 }
 
-.envelope-email:hover .menu-item-email,
-.envelope-email:focus .menu-item-email {
-    color: #2196f3;
-}
-
-.envelope-email:hover,
-.envelope-email:focus {
-    fill: #2196f3;
-}
-
-.envelope-email {
-    margin-right: 30px;
-}
-
-.smartfone-phone:hover .menu-item-phone,
-.smartfone-phone:focus .menu-item-phone {
-    color: #2196f3;
-}
-
-.smartfone-phone:hover,
-.smartfone-phone:focus {
-    fill: #2196f3;
-}
-
-.contact-emeil-link:hover,
-.contact-emeil-link:focus {
+.menu-link-contact:hover,
+.menu-link-contact:focus {
     color: var(--accent-color);
 }
 
-.contact-phone-nomber-link:hover,
-.contact-phone-nomber-link:focus {
-    color: var(--accent-color);
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
-.smartphone-icon:hover,
-.smartphone-icon:hover {
-    color: var(--accent-color);
+.contact-icon:hover {
+    /* .contact-icon:focus { */
+    fill: var(--accent-color);
 }
 
 .hero {
@@ -234,15 +209,32 @@ body {
     border: 0;
 }
 
-.activity {
-    padding-top: 0px;
+.visually-list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
-.proficional {
-    padding-top: 0px;
-    background-color: var(--primary-light-grey-color);
-    padding-top: 94px;
+.visually-list > .visually-item:not(:last-child) {
+    margin-right: 30px;
 }
 
+.visually-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 120px;
+    background: var(--primary-light-grey-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.visually-item-icon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    height: 70px;
+}
 .main-title {
     font-weight: 700;
     font-size: 14px;
@@ -263,6 +255,21 @@ body {
     margin-bottom: 0px;
 }
 
+.activity-item,
+.proficional-item {
+    display: flex;
+}
+
+.activity {
+    padding-top: 0px;
+}
+
+.proficional {
+    padding-top: 0px;
+    background-color: var(--primary-light-grey-color);
+    padding-top: 94px;
+}
+
 .activity-title,
 .proficional-title {
     padding: 0px;
@@ -273,21 +280,6 @@ body {
     text-align: center;
     color: var(--basic-color);
     margin-bottom: 50px;
-}
-
-.visually-list,
-.activity-item,
-.proficional-item {
-    display: flex;
-}
-.visually-list > .visually-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.visually-item::before {
-    display: block;
-    content: ;
-    height: 120px;
 }
 
 .activity-item > .activ:not(:last-child) {
