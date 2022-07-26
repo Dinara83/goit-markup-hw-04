@@ -351,8 +351,9 @@ body {
 .social-icon {
     fill: #afb1b8;
 }
-.social-link:hover .social-list-icon,
-.social-link:focus .social-list-icon {
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
     fill: var(--primary-white-color);
 }
 /* Портфолио */
