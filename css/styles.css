@@ -12,33 +12,6 @@
     --line-header: #ececec;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-ul,
-ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
-img {
-    display: block;
-    min-width: 100%;
-    height: auto;
-}
-.list {
-    list-style: none;
-}
-.link {
-    text-decoration: none;
-}
-
 body {
     font-family: var(--primary-font);
     font-weight: 400;
@@ -174,11 +147,11 @@ body {
     padding: 200px 0;
     text-align: center;
     color: #fff;
-    background-color: #c4c4c4;
+    /* background-color: #c4c4c4; */
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/Фон_вверху_html/Img.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -324,14 +297,14 @@ body {
 .prof {
     width: 270px;
     margin: 0 auto;
-}
-
-.prof-title {
-    padding: 30px 30px;
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.prof-title {
+    padding: 30px 30px;
 }
 
 .proficional-team {
@@ -360,10 +333,6 @@ body {
     gap: 10px;
 }
 
-.current-social {
-    background-color: var(--accent-color);
-}
-
 .social-link {
     display: flex;
     justify-content: center;
@@ -376,6 +345,7 @@ body {
 .social-link:hover,
 .social-link:focus {
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .social-icon {
@@ -449,6 +419,11 @@ body {
     background: var(--primary-white-color);
     border: 1px solid var(--primary-theme-light);
 }
+.project-item:hover {
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .project-title {
     padding: 24px 20px;
@@ -487,7 +462,6 @@ body {
 
 .clients-list {
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
@@ -495,21 +469,36 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
-    width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: #afb1b8;
 }
-.clients-icon {
-    fill: #afb1b8;
+
+.clients-link-four {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 92px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    fill: var(--accent-color);
+}
+
+.clients-link-four:hover,
+.clients-link-four:focus {
+    fill: var(--accent-color);
 }
 
 .clients-link:hover,
 .clients-link:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
+    fill: var(--accent-color);
 }
 
 /* Футер */
@@ -567,19 +556,23 @@ body {
     margin-left: 70px;
 }
 
-.social-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-title {
+.foot-social-title {
     margin-bottom: 20px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-style: normal;
     color: var(--primary-white-color);
 }
-.social-list-item {
+
+.foot-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.foot-social-list-item {
     display: flex;
     flex-wrap: wrap;
     width: 44px;
@@ -588,7 +581,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.social-link {
+.foot-social-link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -598,15 +591,7 @@ body {
     justify-content: center;
     fill: var(--primary-white-color);
 }
-.social-link:hover,
-.social-link:focus {
+.foot-social-link:hover,
+.foot-social-link:focus {
     background: var(--accent-color);
-}
-
-.social-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
