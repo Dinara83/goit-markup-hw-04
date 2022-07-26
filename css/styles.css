@@ -485,6 +485,10 @@ body {
     fill: var(--accent-color);
 }
 
+.client-logo {
+    margin: 32px 16px;
+}
+
 .clients-link-four:hover,
 .clients-link-four:focus {
     fill: var(--accent-color);
