@@ -447,11 +447,6 @@ body {
 }
 /* Клиенты */
 
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .clients-title {
     font-size: 36px;
     line-height: 1.16;
@@ -471,44 +466,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
+    width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     fill: #afb1b8;
 }
 
-.clients-icon {
-    fill: #afb1b8;
-}
-
-.clients-link-four {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 92px;
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-    fill: var(--accent-color);
-}
-
-.client-logo {
-    margin: 32px 16px;
-}
-
-.clients-link-four:hover,
-.clients-link-four:focus {
-    fill: var(--accent-color);
-}
-
 .clients-link:hover,
 .clients-link:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
-}
-
-.clients-link:hover .clients-logo,
-.clients-link:focus .clients-logo {
-    fill: var(--accent-color);
 }
 
 /* Футер */
